@@ -1,5 +1,152 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "微软雅黑", "microsoft sans serif";
+}
+
+body {
+	-moz-user-select: none;
+}
+
+.main {
+	-webkit-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s;
+}
+
 .header {
+	z-index: 9;
 	width: 100%;
 	height: 100px;
-	background-color: red;
+	background-color: #563d7c;
+	border-color: #463265;
+	box-shadow: 0 1px 0 rgba(255,255,255,.1);
+	top: 0;
+	left: 0;
+}
+
+.header .logo{
+	width: auto;
+	float: left;
+	font-family: "agency fb";
+	font-size: 20px;
+	margin: 0 50px;
+	height: 80px;
+	line-height: 80px;
+	background-color: #F5F5F5;
+	
+	-webkit-border-radius: 80px;
+	-moz-border-radius: 80px;
+	-ms-border-radius: 80px;
+	-o-border-radius: 80px;
+	border-radius: 80px;
+}
+
+.bar {
+	width: 100%;
+	height: 40px;
+	background-color: #563d7c;
+}
+.bar.active{
+	position: fixed;
+	top: 0;
+}
+.bar ul{
+	margin-left: 20%;
+}
+.bar ul li{
+	list-style: none;
+	float: left;
+	margin-right: 10px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.bar ul li:hover{
+	background-color: wheat;
+}
+
+.content {
+	height: 100%;
+	width: 1200px;
+	margin: auto;
+}
+
+.content .model{
+    background-color: #eee;
+	border-top: 1px solid #ccc;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 3;
+}
+
+.main-info {
+	margin: auto;
+	width: 700px;
+	height: 80px;
+}
+
+.main-info p {
+	font-size: 30px;
+	color: aliceblue;
+}
+
+.main-info span {
+	margin-right: 0;
+	margin-top: 20px;
+	float: right;
+	font-size: 28px;
+	color: aliceblue;
+}
+.main.active {
+	margin-left: 400px;
+}
+
+.float-menu {
+	position: fixed;
+	width: 400px;
+	height: 100%;
+	top: 0;
+	left: -400px;
+	bottom: 0;
+	background: #f5f5f5;
+	z-index: 9;
+	-webkit-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s;
+}
+
+.float-menu.active {
+	left: 0;
+}
+
+.float-menu .logo {
+	background-color: #ccc;
+	height: 120px;
+	text-align: center;
+	line-height: 120px;
+}
+
+.float-menu .logo h3 {
+	font-size: 32px;
+	color: #333;
+}
+
+.float-menu .list div{
+	padding: 15px;
+	width: 33%;
+	float: left;
+	text-align: center;
+}
+.float-menu .list a{
+	/*去除a标签的下划线*/
+	text-decoration: none;
+}
+.float-menu .list img {
+	-webkit-border-radius: 80px;
+	-moz-border-radius: 80px;
+	-ms-border-radius: 80px;
+	-o-border-radius: 80px;
+	border-radius: 80px;
 }

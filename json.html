@@ -4,140 +4,139 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>JSON</title>
-		<link href="css/style.css" />
+		<link rel="stylesheet" href="css/style.css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
-		<style>
-			* {
-				margin: 0;
-				padding: 0;
-				box-sizing: border-box;
-				font-family: "微软雅黑", "microsoft sans serif";
-			}
-			body{
-				-moz-user-select:none;
-			}			
-			.main {
-				-webkit-transition: all .2s ease;
-				-o-transition: all .2s ease;
-				transition: all .2s;
-			}
-			
-			.header {
-				width: 100%;
-				height: 100px;
-				background-color: #563d7c;
-				box-shadow: 0 1px 0 rgba(255, 255, 255, .1);
-				top: 0;
-				left: 0;
-			}
-			
-			.content {
-				height: 100%;
-				width: 10000px;
-			}
-			
-			.main-info {
-				margin: auto;
-				width: 700px;
-				height: 80px;
-			}
-			
-			.main-info p {
-				font-size: 30px;
-				color: aliceblue;
-			}
-			
-			.main-info span {
-				margin-right: 0;
-				margin-top: 20px;
-				float: right;
-				font-size: 28px;
-				color: aliceblue;
-			}
-			
-			.bar {
-				position: fixed;
-				height: 20px;
-				top: 60px;
-				background-color: #563d7c;
-			}
-			
-			.float-menu {
-				position: fixed;
-				width: 200px;
-				height: 100%;
-				top: 0;
-				left: -200px;
-				bottom: 0;
-				background: #f5f5f5;
-				z-index: 9;
-				-webkit-transition: all .2s ease;
-				-o-transition: all .2s ease;
-				transition: all .2s;
-			}
-			
-			.float-menu.active {
-				left: 0;
-			}
-			
-			.main.active {
-				margin-left: 200px;
-			}
-			
-			.float-menu .logo{
-				background-color: #ccc;
-				height: 120px;
-				text-align: center;
-				line-height: 120px;
-			}
-			.float-menu .logo h3{
-				font-size: 32px;
-				color: #333;
-			}
-		</style>
 	</head>
 
 	<body onselectstart="return false">
 		<div class="main">
 			<div data-id="" class="header">
+				<div class="logo">
+					Beyond
+				</div>
 				<div class="main-info">
 					<p>朝雾初升，落叶飘零</p>
 					<span>佚名</span>
 				</div>
 			</div>
 			<div class="bar">
+				<ul>
+					<li>第一章</li>
+					<li>第二章</li>
+					<li>第三章</li>
+					<li>第四章</li>
+					<li>第五章</li>
+					<li>第六章</li>
+					<li>第七章</li>
+					<li>第八章</li>
+					<li>第九章</li>
+					<li>第十几章</li>
+				</ul>
 			</div>
 			<div class="content">
+				<div>
+					<div></div>
+					<div class="model">
+						Regular Expression的“Regular”一般被译为“正则”、“正规”、“常规”。此处的“Regular”即是“规则”、“规律”的意思，Regular Expression即“描述某种规则的表达式”之意。
+					</div>
+				</div>
+				<div>
+					<h5>历史[编辑]</h5>
+					<div class="model">
+						<p>最初的正则表达式出现于理论计算机科学的自动控制理论和形式化语言理论中。在这些领域中有对计算（自动控制）的模型和对形式化语言描述与分类的研究。 1940年，Warren McCulloch与Walter Pitts将神经系统中的神经元描述成小而简单的自动控制元。 1950年代，数学家斯蒂芬·科尔·克莱尼利用称之为“正则集合”的数学符号来描述此模型。肯·汤普逊将此符号系统引入编辑器QED，随后是Unix上的编辑器ed，并最终引入grep。自此以后，正则表达式被广泛地应用于各种Unix或类Unix系统的工具中。 Perl的正则表达式源自于Henry Spencer所写的regex，它已经演化成了pcre（Perl兼容正则表达式，Perl Compatible Regular Expressions），一个由Philip Hazel开发的，为很多现代工具所使用的库。 各计算机语言之间的正则表达式的集成目前[何时？]开展得很差。Perl6的子项目Apocalypse的设计中已考虑到了这点。</p>
+					</div>
+				</div>
+				<div>
+					<h5>理论[编辑]</h5>
+					<div class="model">
+						<p>正则表达式可以用形式化语言理论的方式来表达。正则表达式由常量和算子组成，它们分别指示字符串的集合和在这些集合上的运算。给定有限字母表Σ定义了下列常量： （“空集”）∅指示集合∅ （“空串”）ε指示集合{ε}</p>
+					</div>
+				</div>
+				<div>
+					<h5>理论[编辑]</h5>
+					<div class="model">
+						<p>正则表达式可以用形式化语言理论的方式来表达。正则表达式由常量和算子组成，它们分别指示字符串的集合和在这些集合上的运算。给定有限字母表Σ定义了下列常量： （“空集”）∅指示集合∅ （“空串”）ε指示集合{ε}</p>
+					</div>
+				</div>
+				<div>
+					<h5>理论[编辑]</h5>
+					<div class="model">
+						<p>正则表达式可以用形式化语言理论的方式来表达。正则表达式由常量和算子组成，它们分别指示字符串的集合和在这些集合上的运算。给定有限字母表Σ定义了下列常量： （“空集”）∅指示集合∅ （“空串”）ε指示集合{ε}</p>
+					</div>
+				</div>
+				<div>
+					<h5>理论[编辑]</h5>
+					<div class="model">
+						<p>正则表达式可以用形式化语言理论的方式来表达。正则表达式由常量和算子组成，它们分别指示字符串的集合和在这些集合上的运算。给定有限字母表Σ定义了下列常量： （“空集”）∅指示集合∅ （“空串”）ε指示集合{ε}</p>
+					</div>
+				</div>
+				<div>
+					<h5></h5>
+					<div class="model">
+						<p>（“文字字符”）在Σ中的a指示集合{a} 定义了下列运算： （“串接”）RS指示集合{ αβ | α ∈ R，β ∈ S }。例如：{"ab","c"}{"d","ef"} = {"abd", "abef", "cd", "cef"}。 （“选择”）R|S指示R和S的并集。例如：{"ab", "c"}|{"ab", "d", "ef"}= {"ab", "c", "d", "ef"} （“Kleene星号”）R* 指示包含ε并且闭合在字符串串接下的R的最小超集。这是可以通过R中的零或多个字符串的串接得到所有字符串的集合。例如，{"ab", "c"}* = {ε, "ab", "c", "abab", "abc", "cab", "cc", "ababab", ... }。 上述常量和算子形成了克莱尼代数。 很多课本使用对选择使用符号∪, +或∨替代竖杠。 为了避免括号，假定Kleene星号有最高优先级，接着是串接，接着是并集。如果没有歧义则可以省略括号。例如，(ab)c可以写为abc而a|(b(c*))可以写为a|bc*。 例子： a|b*指示{a, ε, b, bb, bbb, ...}。 (a|b)*指示由包括空串、任意数目个a或b字符组成的所有字符串的集合。 ab*(c|ε)指示开始于一个a接着零或多个b和最终可选的一个c的字符串的集合。</p>
+					</div>
+				</div>
 
 			</div>
 		</div>
-		<div class="float-menu active">
+		<div class="float-menu">
 			<div class="logo">
 				<h3>beyond</h3>
 			</div>
-			<ul>
-				<li>概要</li>
-				<li>历史</li>
-				<li>JAVA</li>
-				<li>Mysql</li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</div>
+			<div class="list">
+				<div>
+					<a href=""><img src="img/logo/javaSE_logo.jpg" />
+						<p>Java</p>
+					</a>
+				</div>
+				<div>
+					<a href=""><img src="img/logo/javaEE_logo.jpg" alt="" />
+						<p>JavaEE</p>
+					</a>
+				</div>
+				<div>
+					<a href=""><img src="img/logo/mySql_logo.jpg" alt="" />
+						<p>MySql</p>
+					</a>
+				</div>
+				<div>
+					<a href=""><img src="img/logo/javaScript_logo.jpg" alt="" />
+						<p>JavaScript</p>
+					</a>
+				</div>
+				<div>
+					<a href=""><img src="img/logo/css3_logo.jpg" alt="" />
+						<p>CSS3</p>
+					</a>
+				</div>
+			</div>
 	</body>
 	<script>
 		$(function() {
+			$(".header .logo").click(function() {
+				$(".main").toggleClass("active");
+				$(".float-menu").toggleClass("active");
+			});
 			$(document).dblclick(function() {
 				$(".main").toggleClass("active");
 				$(".float-menu").toggleClass("active");
 			});
+			var oldT = 0;
+			window.onscroll = function() {
+				var t = document.documentElement.scrollTop || document.body.scrollTop;
+				if(t >= 100) {
+					if(t < oldT) {
+						if(!$(".bar").hasClass("active")) {
+							$(".bar").addClass("active");
+						}
+					} else if($(".bar").hasClass("active")) {
+						$(".bar").removeClass("active");
+					}
+				} else if($(".bar").hasClass("active")) {
+					$(".bar").removeClass("active");
+				}
+				oldT = t;
+			}
 		});
 	</script>
 
