@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>JSON</title>
+		<link href="css/style.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: "微软雅黑", "microsoft sans serif";
+			}
+			body{
+				-moz-user-select:none;
+			}			
+			.main {
+				-webkit-transition: all .2s ease;
+				-o-transition: all .2s ease;
+				transition: all .2s;
+			}
+			
+			.header {
+				width: 100%;
+				height: 100px;
+				background-color: #563d7c;
+				box-shadow: 0 1px 0 rgba(255, 255, 255, .1);
+				top: 0;
+				left: 0;
+			}
+			
+			.content {
+				height: 100%;
+				width: 10000px;
+			}
+			
+			.main-info {
+				margin: auto;
+				width: 700px;
+				height: 80px;
+			}
+			
+			.main-info p {
+				font-size: 30px;
+				color: aliceblue;
+			}
+			
+			.main-info span {
+				margin-right: 0;
+				margin-top: 20px;
+				float: right;
+				font-size: 28px;
+				color: aliceblue;
+			}
+			
+			.bar {
+				position: fixed;
+				height: 20px;
+				top: 60px;
+				background-color: #563d7c;
+			}
+			
+			.float-menu {
+				position: fixed;
+				width: 200px;
+				height: 100%;
+				top: 0;
+				left: -200px;
+				bottom: 0;
+				background: #f5f5f5;
+				z-index: 9;
+				-webkit-transition: all .2s ease;
+				-o-transition: all .2s ease;
+				transition: all .2s;
+			}
+			
+			.float-menu.active {
+				left: 0;
+			}
+			
+			.main.active {
+				margin-left: 200px;
+			}
+			
+			.float-menu .logo{
+				background-color: #ccc;
+				height: 120px;
+				text-align: center;
+				line-height: 120px;
+			}
+			.float-menu .logo h3{
+				font-size: 32px;
+				color: #333;
+			}
+		</style>
+	</head>
+
+	<body onselectstart="return false">
+		<div class="main">
+			<div data-id="" class="header">
+				<div class="main-info">
+					<p>朝雾初生，落叶飘零</p>
+					<span>佚名</span>
+				</div>
+			</div>
+			<div class="bar">
+			</div>
+			<div class="content">
+
+			</div>
+		</div>
+		<div class="float-menu active">
+			<div class="logo">
+				<h3>beyond</h3>
+			</div>
+			<ul>
+				<li>概要</li>
+				<li>历史</li>
+				<li>JAVA</li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</body>
+	<script>
+		$(function() {
+			$(document).dblclick(function() {
+				$(".main").toggleClass("active");
+				$(".float-menu").toggleClass("active");
+			});
+		});
+	</script>
+
+</html>
