@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 		<meta charset="UTF-8">
 		<title>JSON</title>
@@ -8,18 +7,27 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
 	</head>
 
-	<body onselectstart="return false">
+	<body><!--onselectstart="return false"-->
 		<div class="main">
 			<div data-id="" class="header">
 				<div class="logo">
 					Beyond
 				</div>
 				<div class="main-info">
-					<p>朝雾初升，落叶飘零</p>
-					<span>佚名</span>
+					<p></p>
+					<span></span>
+				</div>
+				<div class="main-navbar">
+					<ul>
+						<li>还没想好</li>
+						<li>带你入坑</li>
+						<li>写什么</li>
+						<li>tools</li>
+						<li>About&nbsp;Us</li>
+					</ul>
 				</div>
 			</div>
-			<div class="bar">
+			<div class="navbar">
 				<ul>
 					<li>第一章</li>
 					<li>第二章</li>
@@ -33,6 +41,9 @@
 					<li>第十几章</li>
 				</ul>
 			</div>
+			<div class="float-menu-coffee">
+				<div></div>
+			</div>
 			<div class="content">
 				<div>
 					<div></div>
@@ -41,37 +52,37 @@
 					</div>
 				</div>
 				<div>
-					<h5>历史[编辑]</h5>
+					<h3>历史[编辑]</h3>
 					<div class="model">
 						<p>最初的正则表达式出现于理论计算机科学的自动控制理论和形式化语言理论中。在这些领域中有对计算（自动控制）的模型和对形式化语言描述与分类的研究。 1940年，Warren McCulloch与Walter Pitts将神经系统中的神经元描述成小而简单的自动控制元。 1950年代，数学家斯蒂芬·科尔·克莱尼利用称之为“正则集合”的数学符号来描述此模型。肯·汤普逊将此符号系统引入编辑器QED，随后是Unix上的编辑器ed，并最终引入grep。自此以后，正则表达式被广泛地应用于各种Unix或类Unix系统的工具中。 Perl的正则表达式源自于Henry Spencer所写的regex，它已经演化成了pcre（Perl兼容正则表达式，Perl Compatible Regular Expressions），一个由Philip Hazel开发的，为很多现代工具所使用的库。 各计算机语言之间的正则表达式的集成目前[何时？]开展得很差。Perl6的子项目Apocalypse的设计中已考虑到了这点。</p>
 					</div>
 				</div>
 				<div>
-					<h5>理论[编辑]</h5>
+					<h3>理论[编辑]</h3>
 					<div class="model">
 						<p>正则表达式可以用形式化语言理论的方式来表达。正则表达式由常量和算子组成，它们分别指示字符串的集合和在这些集合上的运算。给定有限字母表Σ定义了下列常量： （“空集”）∅指示集合∅ （“空串”）ε指示集合{ε}</p>
 					</div>
 				</div>
 				<div>
-					<h5>理论[编辑]</h5>
+					<h3>理论[编辑]</h3>
 					<div class="model">
 						<p>正则表达式可以用形式化语言理论的方式来表达。正则表达式由常量和算子组成，它们分别指示字符串的集合和在这些集合上的运算。给定有限字母表Σ定义了下列常量： （“空集”）∅指示集合∅ （“空串”）ε指示集合{ε}</p>
 					</div>
 				</div>
 				<div>
-					<h5>理论[编辑]</h5>
+					<h3>理论[编辑]</h3>
 					<div class="model">
 						<p>正则表达式可以用形式化语言理论的方式来表达。正则表达式由常量和算子组成，它们分别指示字符串的集合和在这些集合上的运算。给定有限字母表Σ定义了下列常量： （“空集”）∅指示集合∅ （“空串”）ε指示集合{ε}</p>
 					</div>
 				</div>
 				<div>
-					<h5>理论[编辑]</h5>
+					<h3>理论[编辑]</h3>
 					<div class="model">
 						<p>正则表达式可以用形式化语言理论的方式来表达。正则表达式由常量和算子组成，它们分别指示字符串的集合和在这些集合上的运算。给定有限字母表Σ定义了下列常量： （“空集”）∅指示集合∅ （“空串”）ε指示集合{ε}</p>
 					</div>
 				</div>
 				<div>
-					<h5></h5>
+					<h3></h3>
 					<div class="model">
 						<p>（“文字字符”）在Σ中的a指示集合{a} 定义了下列运算： （“串接”）RS指示集合{ αβ | α ∈ R，β ∈ S }。例如：{"ab","c"}{"d","ef"} = {"abd", "abef", "cd", "cef"}。 （“选择”）R|S指示R和S的并集。例如：{"ab", "c"}|{"ab", "d", "ef"}= {"ab", "c", "d", "ef"} （“Kleene星号”）R* 指示包含ε并且闭合在字符串串接下的R的最小超集。这是可以通过R中的零或多个字符串的串接得到所有字符串的集合。例如，{"ab", "c"}* = {ε, "ab", "c", "abab", "abc", "cab", "cc", "ababab", ... }。 上述常量和算子形成了克莱尼代数。 很多课本使用对选择使用符号∪, +或∨替代竖杠。 为了避免括号，假定Kleene星号有最高优先级，接着是串接，接着是并集。如果没有歧义则可以省略括号。例如，(ab)c可以写为abc而a|(b(c*))可以写为a|bc*。 例子： a|b*指示{a, ε, b, bb, bbb, ...}。 (a|b)*指示由包括空串、任意数目个a或b字符组成的所有字符串的集合。 ab*(c|ε)指示开始于一个a接着零或多个b和最终可选的一个c的字符串的集合。</p>
 					</div>
@@ -83,10 +94,13 @@
 			<div class="logo">
 				<h3>beyond</h3>
 			</div>
+			<div class="search">
+				<input type="text" />
+			</div>
 			<div class="list">
 				<div>
 					<a href=""><img src="img/logo/javaSE_logo.jpg" />
-						<p>Java</p>
+						<p>JavaSE</p>
 					</a>
 				</div>
 				<div>
@@ -109,35 +123,158 @@
 						<p>CSS3</p>
 					</a>
 				</div>
+				<div><a href="">
+						<img src="img/logo/android_logo.jpg" alt="" />
+						<p>Android</p>
+					</a></div>
+				<div><a href="">
+						<img src="img/logo/hadoop_logo.jpg" alt="" />
+						<p>Hadoop</p>
+					</a></div>
+				<div><a href="">
+						<img src="img/logo/jquery_logo.jpg" alt="" />
+						<p>Jquery</p>
+					</a></div>
+				<div><a href="">
+						<img src="img/logo/mongoDB_logo.jpg" alt="" />
+						<p>Mongo DB</p>
+					</a></div>
+				<div><a href="">
+						<img src="img/logo/php_logo.jpg" alt="" />
+						<p>PHP</p>
+					</a></div>
+				<div><a href="">
+						<img src="img/logo/python_logo.jpg" alt="" />
+						<p>Python</p>
+					</a></div>
+				<div><a href="">
+						<img src="img/logo/wechat_logo.jpg" alt="" />
+						<p>微信开发</p>
+					</a></div>
+				<div><a href="">
+						<img src="img/logo/php_logo.jpg" alt="" />
+						<p>PHP</p>
+					</a></div>
+				<div><a href="">
+						<img src="img/logo/python_logo.jpg" alt="" />
+						<p>Python</p>
+					</a></div>
+				<div><a href="">
+						<img src="img/logo/wechat_logo.jpg" alt="" />
+						<p>微信开发</p>
+					</a></div>
+				<div><a href="">
+						<img src="img/logo/php_logo.jpg" alt="" />
+						<p>PHP</p>
+					</a></div>
+				<div><a href="">
+						<img src="img/logo/python_logo.jpg" alt="" />
+						<p>Python</p>
+					</a></div>
+				<div><a href="">
+						<img src="img/logo/wechat_logo.jpg" alt="" />
+						<p>微信开发</p>
+					</a></div>
+				<div><a href="">
+						<img src="img/logo/php_logo.jpg" alt="" />
+						<p>PHP</p>
+					</a></div>
+				<div><a href="">
+						<img src="img/logo/python_logo.jpg" alt="" />
+						<p>Python</p>
+					</a></div>
+				<div><a href="">
+						<img src="img/logo/wechat_logo.jpg" alt="" />
+						<p>微信开发</p>
+					</a></div>
 			</div>
 	</body>
 	<script>
-		$(function() {
-			$(".header .logo").click(function() {
-				$(".main").toggleClass("active");
-				$(".float-menu").toggleClass("active");
-			});
-			$(document).dblclick(function() {
-				$(".main").toggleClass("active");
-				$(".float-menu").toggleClass("active");
-			});
-			var oldT = 0;
-			window.onscroll = function() {
-				var t = document.documentElement.scrollTop || document.body.scrollTop;
-				if(t >= 100) {
-					if(t < oldT) {
-						if(!$(".bar").hasClass("active")) {
-							$(".bar").addClass("active");
-						}
-					} else if($(".bar").hasClass("active")) {
-						$(".bar").removeClass("active");
-					}
-				} else if($(".bar").hasClass("active")) {
-					$(".bar").removeClass("active");
+$(function() {
+	flashEvent();
+});
+
+/**
+ * 左侧浮动菜单动画
+ */
+function floatMenuInOut(){
+	$(".main").toggleClass("active");
+	$(".float-menu").toggleClass("active");
+	$(".float-menu-coffee").toggleClass("active");
+	$(".float-menu-coffee>div").toggleClass("active");
+	$(".float-menu-coffee>div:not('active')").children().hide();
+	$(".float-menu-coffee>div.active").children().show();
+}
+
+/**
+ * 本页面的动画事件
+ */
+function flashEvent() {
+	/**
+	 *  左侧菜单栏浮动事件
+	 */
+	$(document).click(function(e){
+		var target = e.target;
+		if($(target).hasClass("main")){
+			floatMenuInOut();
+		}
+		if($(target).hasClass("float-menu-coffee")){
+			floatMenuInOut();
+		}
+	});
+	$(".header .logo").click(function(){
+		floatMenuInOut();
+	});
+	
+	$(".float-menu .logo").hover(
+		function(){
+			$(".float-menu .search").addClass("active");
+			$(".float-menu .search.active").hover(
+				function(){
+					//$(".float-menu .search").addClass("active");
+				},
+				function(){
+					$(".float-menu .search").removeClass("active");
 				}
-				oldT = t;
+			);
+		},
+		function(){
+			//$(".float-menu .search").removeClass("active");
+		}
+	);
+	
+	$(".float-menu .list a").hover(
+		function() {
+			$(".float-menu-coffee>div").html($(this).html());
+		},
+		function() {
+
+		}
+	)
+	/*$(".main .content").dblclick(function() {
+		flash();
+	});*/
+	
+	/**
+	 *  页面上下滑动事件
+	 */
+	var oldT = 0;
+	window.onscroll = function() {
+		var t = document.documentElement.scrollTop || document.body.scrollTop;
+		if(t >= 100) {
+			if(t < oldT) {
+				if(!$(".navbar").hasClass("active")) {
+					$(".navbar").addClass("active");
+				}
+			} else if($(".navbar").hasClass("active")) {
+				$(".navbar").removeClass("active");
 			}
-		});
-	</script>
+		} else if($(".navbar").hasClass("active")) {
+			$(".navbar").removeClass("active");
+		}
+		oldT = t;
+	}
+}
+</script>
 
 </html>

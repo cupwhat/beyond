@@ -6,7 +6,7 @@
 }
 
 body {
-	-moz-user-select: none;
+	/*-moz-user-select: none;*/
 }
 
 .main {
@@ -15,9 +15,13 @@ body {
 	transition: all .2s;
 }
 
+.main,.header,.navbar,.main-navbar{
+	width: 100%;
+	min-width: 1250px;
+}
+
 .header {
 	z-index: 9;
-	width: 100%;
 	height: 100px;
 	background-color: #563d7c;
 	border-color: #463265;
@@ -26,13 +30,14 @@ body {
 	left: 0;
 }
 
+
 .header .logo{
 	width: auto;
+	height: 80px;
 	float: left;
 	font-family: "agency fb";
 	font-size: 20px;
 	margin: 0 50px;
-	height: 80px;
 	line-height: 80px;
 	background-color: #F5F5F5;
 	
@@ -42,20 +47,32 @@ body {
 	-o-border-radius: 80px;
 	border-radius: 80px;
 }
+.main-navbar{
+	height: 20px;
+	line-height: 20px;
+    right: 50px;
+}
+.main-navbar ul li{
+	list-style: none;
+	float: right;
+	padding-right: 15px;
+	padding-left: 3px;
+	border-left: 2px solid #aaa;
+}
 
-.bar {
+.navbar {
 	width: 100%;
 	height: 40px;
 	background-color: #563d7c;
 }
-.bar.active{
+.navbar.active{
 	position: fixed;
 	top: 0;
 }
-.bar ul{
+.navbar ul{
 	margin-left: 20%;
 }
-.bar ul li{
+.navbar ul li{
 	list-style: none;
 	float: left;
 	margin-right: 10px;
@@ -63,7 +80,7 @@ body {
 	line-height: 40px;
 }
 
-.bar ul li:hover{
+.navbar ul li:hover{
 	background-color: wheat;
 }
 
@@ -85,19 +102,16 @@ body {
 	margin: auto;
 	width: 700px;
 	height: 80px;
+	font-size: 20px;
+	color: aliceblue;
 }
 
 .main-info p {
-	font-size: 30px;
-	color: aliceblue;
 }
 
 .main-info span {
-	margin-right: 0;
-	margin-top: 20px;
+	margin-right: 20%;
 	float: right;
-	font-size: 28px;
-	color: aliceblue;
 }
 .main.active {
 	margin-left: 400px;
@@ -132,6 +146,33 @@ body {
 	font-size: 32px;
 	color: #333;
 }
+.float-menu .search{
+	display: none;
+	height: 120px;
+    background-color: #fff;
+    /* float: none; */
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.float-menu .search.active{
+	display: block;
+}
+
+.float-menu .search input{
+	height: 30px;
+    width: 100%;
+    margin-top: 90px;
+}
+
+.float-menu .list{
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 100%;
+	padding-bottom: 120px;
+}
 
 .float-menu .list div{
 	padding: 15px;
@@ -149,4 +190,42 @@ body {
 	-ms-border-radius: 80px;
 	-o-border-radius: 80px;
 	border-radius: 80px;
+}
+
+.float-menu-coffee{
+	width: 100%;
+	height: 0%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	background-color: rgba(0, 0, 0, 0.5);
+	-webkit-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s;
+	
+}
+
+.float-menu-coffee.active{
+	left: 400px;
+	height: 100%;
+}
+
+.float-menu-coffee>div{
+	width: 500px;
+	height: 0;
+	background-color: #F5F5F5;
+	position: absolute;
+	left: 100px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 100;
+	
+	-webkit-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s;
+}
+
+.float-menu-coffee>div.active{
+	height: 50%;
 }
